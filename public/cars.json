@@ -1,0 +1,99 @@
+[
+    {
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2023,
+      "color": "Silver",
+      "price": 28000,
+      "img": "./img/volkswagen-silver.png"
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2024,
+      "color": "Black",
+      "price": 55000,
+      "img": "./img/bmw-black.png"
+
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2022,
+      "color": "Black",
+      "price": 30000,
+      "img": "./img/volkswagen-black.png"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2024,
+      "color": "White",
+      "price": 45000,
+      "img": "./img/tesla-white.png"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model Y",
+      "year": 2023,
+      "color": "Blue",
+      "price": 55000,
+      "img": "./img/tesla-blue.png"
+    },
+    {
+      "brand": "BMW",
+      "model": "3 Series",
+      "year": 2023,
+      "color": "Gray",
+      "price": 42000,
+      "img": "./img/bmw-gray.png"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2023,
+      "color": "Blue",
+      "price": 28000,
+      "img": "./img/volkswagen-blue.png"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2022,
+      "color": "White",
+      "price": 30000,
+      "img": "./img/volkswagen-white.png"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model S",
+      "year": 2023,
+      "color": "Black",
+      "price": 80000,
+      "img": "./img/tesla-black.png"
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2024,
+      "color": "White",
+      "price": 55000,
+      "img": "./img/bmw-white.png"
+    },
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2022,
+      "color": "Silver",
+      "price": 60000,
+      "img": "./img/bmw-silver.png"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model Y",
+      "year": 2023,
+      "color": "Red",
+      "price": 55000,
+      "img": "./img/tesla-red.png"
+    }
+]
