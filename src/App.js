@@ -4,7 +4,7 @@ import Test from './components/1/test';
 import Group from './components/3/about_the_company'
 import Catalogue from './components/2/catalogue';
 import ReviewModal from './components/5/review-modal';
-import Comment from './components/4/comments';
+import Comments from './components/4/comments';
 
 function App() {
 
@@ -57,6 +57,12 @@ function App() {
       (click % 2 === 0) ? <p>Ваше число четное</p> : <p>Ваше число нечетное</p>
     } */}
 
+     {/* <header>
+        <nav>
+          <img alt='error'>{imgs}</img>
+        </nav>
+     </header>  */}
+
 <h3>До нашої групи компаній входять</h3>
 
       <div className="container">
@@ -71,14 +77,10 @@ function App() {
       <Group text = "Сервіс замовлення автомобільних запчастин і компонентів" emoji = "⚙️" />
       </div>
 
-     {/* <header>
-        <nav>
-          <img alt='error'>{imgs}</img>
-        </nav>
-     </header> */}
+
       <Catalogue />
-      <Comment />
-      <button onClick={openModal}>Написати відгук</button>
+      <Comments />
+      <button className='modal-btn' onClick={openModal}>Написати відгук</button>
       <ReviewModal isOpen = {isOpen} closeModaL={closeModal} />
       <Test/>
      

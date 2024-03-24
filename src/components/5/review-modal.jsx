@@ -23,10 +23,10 @@ const ReviewModal = ({ isOpen, closeModaL }) => {
             },
             content: {
               position: 'absolute',
-              top: '40px',
-              left: '360px',
-              right: '360px',
-              bottom: '40px',
+              top: '120px',
+              left: '460px',
+              right: '460px',
+              bottom: '120px',
               border: '1px solid #ccc',
               background: '#F0F0F0',
               overflow: 'auto',
@@ -38,14 +38,14 @@ const ReviewModal = ({ isOpen, closeModaL }) => {
           }}
         >
             <h2>Залишити відгук</h2>
-            <form onSubmit={onSubmit} action="">
-                <label className="label-form" htmlFor="firstName">
-                    Ваше ім'я: 
-                    <input name="firstName" type="text" placeholder="ваше ім'я" /></label>
-                <label htmlFor="review">
-                    Напишите ваши враження про нас:
-                    <input name="review" type="text" placeholder="текст відгука" /></label>
-                <button>Відправити</button>
+            <form className="modal-form" onSubmit={onSubmit} action="">
+                <label className="modal-label" htmlFor="firstName">
+                    Ваше ім'я: <br />
+                    <input className="modal-input" name="firstName" type="text" placeholder="ваше ім'я" /></label>
+                <label className="modal-label" htmlFor="review">
+                    Напишите ваши враження про нас: <br />
+                    <input className="modal-input" name="review" type="text" placeholder="текст відгука" /></label>
+                <button className="form-btn">Відправити</button>
             </form>
         </Modal>
     );

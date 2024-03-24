@@ -13,7 +13,7 @@ export default function Test() {
         <>
     <header>
         <nav>
-          <img src={imgs} alt="error" />
+          <img className='logo' src={imgs} alt="error" />
 
           <ul>
             <a href="#!"><li>Каталог авто</li></a>

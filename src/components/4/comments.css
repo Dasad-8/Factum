@@ -11,13 +11,44 @@
 }
 
 .stars {
-    width: 115px;
     display: flex;
-    margin: 0px auto;
+    justify-content: center;
     margin-bottom: 12px;
 }
 
 .stars img {
+    margin-right: 5px;
     width: 23px;
     height: 23px;
+}
+
+.stars img:last-child{
+    margin-right: 0px;
+}
+
+.answer-counter{
+    text-align: center;
+    font-size: 11px;
+    font-weight: medium;
+    color: #939393;
+    margin-bottom: 55px;
+}
+
+.comment-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.comments-left-arrow{
+    padding: 0px;
+    margin-right: 65px;
+    border: none;
+
+}
+
+.comments-right-arrow{
+    padding: 0px;
+    margin-left: 30px;
+    border: none;
 }

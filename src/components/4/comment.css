@@ -1,0 +1,53 @@
+.comment{
+    background-color: #fff;
+    background-image: url(../../../public/img/comment-bg.png);
+    background-repeat: no-repeat;
+    width: fit-content;
+    margin-right: 35px;
+    padding: 25px 50px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.comment-img{
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 107px;
+}
+
+.rating-comment{
+    display: flex;
+    margin-top: 83px;
+    margin-bottom: 15px;
+}
+
+.rating-comment p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stars-comment{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.stars-comment img{
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.stars-comment img:last-child{
+    margin-right: 0px;
+}
+
+h6{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
