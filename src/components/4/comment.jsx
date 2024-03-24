@@ -2,9 +2,11 @@ import './comment.css';
 
 function Comment (props) {
 
+
+
     return <>
         <div className='comment'>
-            <img className='comment-img' src="./img/comment-user-img-1.png" alt="error" />
+            <img className='comment-img' src={comments.user_img} alt="User profile" /> 
             <div className='rating-comment'>
                 <p>5 з 5</p>
                 <div className='stars-comment'>

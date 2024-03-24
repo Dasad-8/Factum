@@ -35,8 +35,8 @@ function Catalogue (props) {
 
     useEffect(() => {
         fetchData();
-
     }, []);
+    
     const  fetchData= async() => {
         fetch ("./cars.json")
     .then(response => response.json())
