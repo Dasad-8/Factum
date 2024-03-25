@@ -36,9 +36,9 @@ function Comments (props) {
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
                     ( <li className='comment' key={index}>
-                        <Comment  />
-                        <Comment  />
-                        <Comment  />
+                        <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
+                        <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
+                        <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
                     </li> ) )
                 
             }
