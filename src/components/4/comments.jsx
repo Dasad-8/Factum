@@ -1,7 +1,6 @@
 import './comments.css';
 import Comment from './comment';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 
 function Comments (props) {
 
