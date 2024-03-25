@@ -1,5 +1,6 @@
 import './comments.css';
 import Comment from './comment';
+import CommentLoader from './comment-loader.jsx';
 import React, {useState, useEffect} from 'react';
 
 function Comments (props) {
@@ -30,7 +31,13 @@ function Comments (props) {
             </div>
             <p className='answer-counter'>на основі 244 відповідей</p>
 
-            <div className='comment-list'>
+            <div className='comment-list'>{ (data.length === 0) ? <> 
+                <CommentLoader /> 
+                <CommentLoader /> 
+                <CommentLoader /> : 
+            </>
+                
+            }
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
                 {/* добавить Loader + добавить тернарный оператор и сделать как в
                     каталоге тег Comment + Comments.
