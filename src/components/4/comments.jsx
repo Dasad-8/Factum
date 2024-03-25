@@ -31,11 +31,11 @@ function Comments (props) {
             </div>
             <p className='answer-counter'>на основі 244 відповідей</p>
 
-            <div className='comment-list'>{ (data.length === 0) ? <> 
+            <ol className='comment-list'>{ (comments.length === 0) ? <> 
                 <CommentLoader /> 
                 <CommentLoader /> 
-                <CommentLoader /> : 
-            </>
+                <CommentLoader /> </> : comments.map ( (item, index) =>
+                    ( <li className='' ></li> ) )
                 
             }
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
@@ -46,7 +46,7 @@ function Comments (props) {
                 <Comment />
                 <Comment />
                 <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>
-            </div>
+            </ol>
         </section>
         
     </>
