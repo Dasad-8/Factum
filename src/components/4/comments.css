@@ -40,6 +40,17 @@
     margin-bottom: 55px;
 }
 
+.comment{
+    background-color: #fff;
+    background-image: url(../../../public/img/comment-bg.png);
+    background-repeat: no-repeat;
+    width: fit-content;
+    margin-right: 35px;
+    padding: 25px 50px;
+    color: #333;
+    border-radius: 5px;
+}
+
 .comments-left-arrow{
     padding: 0px;
     margin-right: 65px;
