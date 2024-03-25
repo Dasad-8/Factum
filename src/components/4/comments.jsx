@@ -35,16 +35,18 @@ function Comments (props) {
                 <CommentLoader /> 
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
-                    ( <li className='comment' ></li> ) )
+                    ( <li className='comment' key={index}>
+                        <Comment  />
+                        <Comment  />
+                        <Comment  />
+                    </li> ) )
                 
             }
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
                 {/* добавить Loader + добавить тернарный оператор и сделать как в
                     каталоге тег Comment + Comments.
                     В данный момент ошибка выходит!!!! + одно предупреждение (Line 9:47:  'comments' is not defined  no-undef) */}
-                <Comment  />
-                <Comment />
-                <Comment />
+               
                 <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>
             </ol>
         </section>
