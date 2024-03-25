@@ -5,7 +5,7 @@ function Comment (props) {
 
 
     return <>
-        <div className='comment'>
+    
             <img className='comment-img' src={comments.user_img} alt="User profile" /> 
             <div className='rating-comment'>
                 <p>5 з 5</p>
@@ -19,7 +19,7 @@ function Comment (props) {
             </div>
             <h6>Костянтин Яневський</h6>
             <p>Сервіс дуже непоганий, старанність та відповідальність присутні , прозорий формат роботи, можно спостерігати за всіма єтапами праці .</p>
-        </div>
+        
     </>
 }
 
