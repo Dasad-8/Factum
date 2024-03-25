@@ -35,7 +35,7 @@ function Comments (props) {
                 <CommentLoader /> 
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
-                    ( <li className='' ></li> ) )
+                    ( <li className='comment' ></li> ) )
                 
             }
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
