@@ -30,8 +30,8 @@ function Comments (props) {
                 <img src="./img/star-blue.png" alt="error" />
             </div>
             <p className='answer-counter'>на основі 244 відповідей</p>
-
-            <ol className='comment-list'>{ (comments.length === 0) ? <> 
+{
+/*             <ol className='comment-list'>{ (comments.length === 0) ? <> 
                 <CommentLoader /> 
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
@@ -43,12 +43,9 @@ function Comments (props) {
                 
             }
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
-                {/* добавить Loader + добавить тернарный оператор и сделать как в
-                    каталоге тег Comment + Comments.
-                    В данный момент ошибка выходит!!!! + одно предупреждение (Line 9:47:  'comments' is not defined  no-undef) */}
                
-                <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>
-            </ol>
+                <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>}
+            </ol> */
         </section>
         
     </>
