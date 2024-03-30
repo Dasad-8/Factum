@@ -47,18 +47,18 @@ function Comments (props) {
             </div>
             <p className='answer-counter'>на основі 244 відповідей</p>
 
-            <ol className='comment-list'>{ (comments.length === 0) ? <> 
+            <ol className='comment-list'>
+                <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
+                
+                { (comments.length === 0) ? <> 
                 <CommentLoader /> 
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
                     ( <li className='comment' key={index}>
                         <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
-                        <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
-                        <Comment userImg={item.userImg} userRating={item.userRating} userName={item.userName} textComment={item.textComment} />
                     </li> ) )}
-                <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
-               
-                <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>
+                
+               <button className='comments-right-arrow'><img src="./img/right-arrow.png" alt="error" /></button>
             </ol>
 
         </section>
