@@ -4,13 +4,13 @@
     height: 82px;
     border-radius: 100%;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -110px;
     margin-left: 107px;
 }
 
 .rating-comment{
     display: flex;
-    margin-top: 83px;
+    margin-top: 63px;
     margin-bottom: 15px;
 }
 
