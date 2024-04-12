@@ -6,6 +6,16 @@ const ReviewModal = ({ isOpen, closeModaL }) => {
 
     const onSubmit = (e) => {
         e.preventDefault (); //не обновляет страницу сайта
+        const modalUseName = document.getElementById('modal-useName').value;
+        const modaComment =  document.getElementById('modal-comment').value;
+        if(modalUseName.length === 0){
+            alert('Поле не может быть пустым! Введите пожалуйста имя пользователя');
+            return;
+        }
+        if (modaComment.length <15){
+            alert('Пожалуйста, заполните поле! Поле должно иметь минимум 15 знаков');
+            return;
+        }
         alert("Дякую за відгук");
         closeModaL();
     }
@@ -41,10 +51,10 @@ const ReviewModal = ({ isOpen, closeModaL }) => {
             <form className="modal-form" onSubmit={onSubmit} action="">
                 <label className="modal-label" htmlFor="firstName">
                     Ваше ім'я: <br />
-                    <input className="modal-input" name="firstName" type="text" placeholder="ваше ім'я" /></label>
+                    <input id="modal-useName" className="modal-input" name="firstName" type="text" placeholder="ваше ім'я" /></label>
                 <label className="modal-label" htmlFor="review">
                     Напишите ваши враження про нас: <br />
-                    <input className="modal-input" name="review" type="text" placeholder="текст відгука" /></label>
+                    <input id="modal-comment" className="modal-input" name="review" type="text" placeholder="текст відгука" /></label>
                 <button className="form-btn">Відправити</button>
             </form>
         </Modal>

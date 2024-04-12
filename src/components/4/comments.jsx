@@ -50,7 +50,7 @@ function Comments (props) {
             <ol className='comment-list'>
                 <button className='comments-left-arrow'><img src="./img/left-arrow.png" alt="error" /></button>
                 
-                { (comments.length === 0) ? <> 
+                {(comments.length === 0) ? <> 
                 <CommentLoader /> 
                 <CommentLoader /> 
                 <CommentLoader /> </> : comments.map ( (item, index) =>
