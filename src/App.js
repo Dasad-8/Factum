@@ -1,10 +1,11 @@
 import './App.css';
 import { useState } from 'react';
-import Test from './components/1/test';
-import Group from './components/3/about_the_company'
-import Catalogue from './components/2/catalogue';
-import ReviewModal from './components/5/review-modal';
-import Comments from './components/4/comments';
+import Logo from './components/1/logo';
+import Group from './components/8/about_the_company'
+import Catalogue from './components/3/catalogue';
+import ReviewModal from './components/16/review-modal';
+import Comments from './components/12/comments';
+import Main from './components/2/main';
 
 function App() {
 
@@ -52,18 +53,20 @@ function App() {
      <button onClick={increment}>+</button>
      <button onClick={decrement}>-</button>
      <button onClick={nu}>null</button>
-    <p>{history}</p>
-    {
-      (click % 2 === 0) ? <p>Ваше число четное</p> : <p>Ваше число нечетное</p>
-    } */}
+     <p>{history}</p>
+     {
+       (click % 2 === 0) ? <p>Ваше число четное</p> : <p>Ваше число нечетное</p>
+      } */}
 
      {/* <header>
         <nav>
-          <img alt='error'>{imgs}</img>
+        <img alt='error'>{imgs}</img>
         </nav>
-     </header>  */}
+      </header>  */}
+      <Logo />
+      <Main />
 
-<h3>До нашої групи компаній входять</h3>
+    <h3>До нашої групи компаній входять</h3>
 
       <div className="container">
       <Group text = "Ліцензований дилер на IAAI, Copart, Manheim" emoji = "👨‍⚖️" />
@@ -82,7 +85,6 @@ function App() {
       <Comments />
       <button className='modal-btn' onClick={openModal}>Написати відгук</button>
       <ReviewModal isOpen = {isOpen} closeModaL={closeModal} />
-      <Test/>
      
     </>
   );

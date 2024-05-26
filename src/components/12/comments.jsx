@@ -1,5 +1,5 @@
 import './comments.css';
-import Comment from './comment';
+import Comment from './comment.jsx';
 import CommentLoader from './comment-loader.jsx';
 import React, {useState, useEffect} from 'react';
 

@@ -1,5 +1,5 @@
-import './test.css'
-export default function Test() {
+import './logo.css';
+export default function Logo() {
 
     /* let {name, some} = props; */
 
@@ -15,7 +15,8 @@ export default function Test() {
         <nav>
           <img className='logo' src={imgs} alt="error" />
 
-          <ul>
+          <ul className='nav-ul'>
+            <img src="./img/Line.png" alt="error" />
             <a href="#!"><li>Каталог авто</li></a>
             <a href="#!"><li>Вигоди</li></a>
             <a href="#!"><li>Ціни</li></a>
@@ -26,14 +27,16 @@ export default function Test() {
           </ul>
 
           <div className='timetable'>
+            <img src="./img/Line.png" alt="error" />
             <p className='bl'>Київ. Дніпро. Одеса</p>
             <p className='gr'>Час роботи</p>
             <p>ПН-СБ з 9:00 до 19:00</p>
           </div>
 
           <div className='tel'>
-            <p className='num'>0 800 331 680</p>
-            <p className='text-num'>Замовити дзвінок</p>
+            <img src="./img/Line.png" alt="error" />
+            <a href="#!"><p className='num'>0 800 331 680</p>
+            <p className='text-num'>Замовити дзвінок</p></a>
           </div>
         </nav>
      </header>
